@@ -1,0 +1,280 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+
+    <model name="teknofest_parkur">
+      <static>true</static>
+      <pose>0 0 0.001 0 0 0</pose> 
+
+      <link name="yol">
+        <visual name="v">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/yol.stl</uri>
+              <scale>0.001 0.001 0.001</scale> 
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/DarkGrey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <collision name="c">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/yol.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+
+      <link name="bariyer">
+        <visual name="v">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/bariyer.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <collision name="c">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/bariyer.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+
+      <link name="dik_egim">
+        <visual name="v">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/dik egim.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Wood</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <collision name="c">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/dik egim.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+
+      <link name="dik_engel">
+        <visual name="v">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/dik engel.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Bricks</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <collision name="c">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/dik engel.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+
+      <link name="engebeli">
+        <visual name="v">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/engebeli arazi.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/WoodPallet</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <collision name="c">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/engebeli arazi.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+
+      <link name="kukalar">
+        <visual name="v">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/kukalar.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Red</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <collision name="c">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/kukalar.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+
+      <link name="su">
+        <visual name="v">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/sudan gecis.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Blue</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <collision name="c">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/sudan gecis.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+
+      <link name="tabelalar">
+        <visual name="v">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/tabelalar.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Green</name> <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <collision name="c">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/tabelalar.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+
+      <link name="tasli_yol">
+        <visual name="v">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/tasli cakilli yol.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Grey</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <collision name="c">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/tasli cakilli yol.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+
+      <link name="yan_egim">
+        <visual name="v">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/yan egim.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Wood</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <collision name="c">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/yan egim.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+
+      <link name="cizgiler">
+        <visual name="v">
+          <geometry>
+            <mesh>
+              <uri>file://src/ika_bot_description/meshes/parkur_stl/cizgiler.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/White</name>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+      </link>
+
+    </model>
+  </world>
+</sdf>
